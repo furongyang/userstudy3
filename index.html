@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="display.css">
+<title>user study 3</title>
+
+</head>
+
+<body>
+	<header>
+	<div class="header">
+		<h1>合成歌聲品質評估</h1>
+	</div>
+	</header>
+	<p><b>摘要: </b>
+	以下共有12個實驗，同個實驗中的音檔内容均爲同一歌曲片段，音檔出現順序與命名不具任何意義；</p>
+	<p>請<b>帶上耳機，每份音檔完整聽畢後</b>，綜合歌聲的品質、聲音連續性等，主觀評分。<b>最佳為5分，最差1分，並將<a href="https://docs.google.com/forms/d/e/1FAIpQLSe7iXYY1X9IO7OoNvVDiwrPKl9kIIYFp1M-4EdvVV7CmvvmfA/viewform?usp=sf_link" target="_blank">分數填至此表單</a>。</b></p>
+	<p>[註]: 各個實驗之間的評分互不影響 (例: 聽實驗2不需考慮實驗1)</p>
+	<p>[註]: 同個實驗中，分數可重複 (例: 音檔1、2均可打4分)</p>
+	<hr>
+
+
+  <form id="myForm">
+  	
+	<div style="float: left; margin-right:50px">
+		<h1>	<font color="DarkRed">實驗 1.</font></h1>
+		<table border=1 id="cssTable">
+
+		<!-- row 1 -->
+		<tr>
+		<td align="center"><b>音檔1</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/rec/f1_118_6.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 2 -->
+		<tr>
+		<td align="center"><b>音檔2</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/hifi/f1_118_6.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 3 -->
+		<tr>
+		<td align="center"><b>音檔3</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/ddsp/f1_118_6.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 4 -->
+		<tr>
+		<td align="center"><b>音檔4</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/pwg/f1_118_6.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 5 -->
+		<tr>
+		<td align="center"><b>音檔5</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/sawsing/f1_118_6.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		</table>
+		</div>
+
+		<div style="float: left; margin-right:50px">
+		<h1>	<font color="DarkRed">實驗 2.</font></h1>
+		<table border=1 id="cssTable">
+
+		<!-- row 1 -->
+		<tr>
+		<td align="center"><b>音檔1</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/hifi/f1_043_8.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 2 -->
+		<tr>
+		<td align="center"><b>音檔2</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/sawsing/f1_043_8.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 3 -->
+		<tr>
+		<td align="center"><b>音檔3</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/ddsp/f1_043_8.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 4 -->
+		<tr>
+		<td align="center"><b>音檔4</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/rec/f1_043_8.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 5 -->
+		<tr>
+		<td align="center"><b>音檔5</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/pwg/f1_043_8.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		</table>
+	</div>
+
+		<div style="display: inline-block;">
+		<h1>	<font color="DarkRed">實驗 3.</font></h1>
+		<table border=1 id="cssTable">
+
+		<!-- row 1 -->
+		<tr>
+		<td align="center"><b>音檔1</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/pwg/f1_123_5.wav" type="audio/wav">
+			</audio> 
+		</td>
+		</tr>
+
+		<!-- row 2 -->
+		<tr>
+		<td align="center"><b>音檔2</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/ddsp/f1_123_5.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 3 -->
+		<tr>
+		<td align="center"><b>音檔3</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/sawsing/f1_123_5.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 4 -->
+		<tr>
+		<td align="center"><b>音檔4</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/rec/f1_123_5.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 5 -->
+		<tr>
+		<td align="center"><b>音檔5</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/hifi/f1_123_5.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		</table>
+	</div>
+
+	<p style="line-height:3.5em;"></p>
+
+	<div style="float: left; margin-right:50px">
+		<h1>	<font color="DarkRed">實驗 4.</font></h1>
+		<table border=1 id="cssTable">
+
+		<!-- row 1 -->
+		<tr>
+		<td align="center"><b>音檔1</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/hifi/f1_142_4.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 2 -->
+		<tr>
+		<td align="center"><b>音檔2</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/ddsp/f1_142_4.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 3 -->
+		<tr>
+		<td align="center"><b>音檔3</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/rec/f1_142_4.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 4 -->
+		<tr>
+		<td align="center"><b>音檔4</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/pwg/f1_142_4.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 5 -->
+		<tr>
+		<td align="center"><b>音檔5</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/sawsing/f1_142_4.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		</table>
+		</div>
+
+		<div style="float: left; margin-right:50px">
+		<h1>	<font color="DarkRed">實驗 5.</font></h1>
+		<table border=1 id="cssTable">
+
+		<!-- row 1 -->
+		<tr>
+		<td align="center"><b>音檔1</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/ddsp/f1_143_5.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 2 -->
+		<tr>
+		<td align="center"><b>音檔2</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/rec/f1_143_5.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 3 -->
+		<tr>
+		<td align="center"><b>音檔3</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/hifi/f1_143_5.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 4 -->
+		<tr>
+		<td align="center"><b>音檔4</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/sawsing/f1_143_5.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 5 -->
+		<tr>
+		<td align="center"><b>音檔5</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/pwg/f1_143_5.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		</table>
+	</div>
+
+		<div style="display: inline-block;">
+		<h1>	<font color="DarkRed">實驗 6.</font></h1>
+		<table border=1 id="cssTable">
+
+		<!-- row 1 -->
+		<tr>
+		<td align="center"><b>音檔1</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/pwg/f1_108_4.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 2 -->
+		<tr>
+		<td align="center"><b>音檔2</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/hifi/f1_108_4.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 3 -->
+		<tr>
+		<td align="center"><b>音檔3</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/ddsp/f1_108_4.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 4 -->
+		<tr>
+		<td align="center"><b>音檔4</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/rec/f1_108_4.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 5 -->
+		<tr>
+		<td align="center"><b>音檔5</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/full data/sawsing/f1_108_4.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		</table>
+	</div>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<p style="line-height:3.5em;"></p>
+	<hr>
+    <br/>
+
+    <!-- Limited Resource -->
+
+	<div style="float: left; margin-right:50px">
+		<h1>	<font color="DarkRed">實驗 7.</font></h1>
+		<table border=1 id="cssTable">
+
+		<!-- row 1 -->
+		<tr>
+		<td align="center"><b>音檔1</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/rec/f1_118_6.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 2 -->
+		<tr>
+		<td align="center"><b>音檔2</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/hifi/f1_118_6.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 3 -->
+		<tr>
+		<td align="center"><b>音檔3</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/ddsp/f1_118_6.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 4 -->
+		<tr>
+		<td align="center"><b>音檔4</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/pwg/f1_118_6.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 5 -->
+		<tr>
+		<td align="center"><b>音檔5</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/sawsing/f1_118_6.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		</table>
+		</div>
+
+		<div style="float: left; margin-right:50px">
+		<h1>	<font color="DarkRed">實驗 8.</font></h1>
+		<table border=1 id="cssTable">
+
+		<!-- row 1 -->
+		<tr>
+		<td align="center"><b>音檔1</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/hifi/f1_043_8.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 2 -->
+		<tr>
+		<td align="center"><b>音檔2</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/sawsing/f1_043_8.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 3 -->
+		<tr>
+		<td align="center"><b>音檔3</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/ddsp/f1_043_8.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 4 -->
+		<tr>
+		<td align="center"><b>音檔4</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/rec/f1_043_8.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 5 -->
+		<tr>
+		<td align="center"><b>音檔5</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/pwg/f1_043_8.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		</table>
+	</div>
+
+		<div style="display: inline-block;">
+		<h1>	<font color="DarkRed">實驗 9.</font></h1>
+		<table border=1 id="cssTable">
+
+		<!-- row 1 -->
+		<tr>
+		<td align="center"><b>音檔1</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/pwg/f1_123_5.wav" type="audio/wav">
+			</audio> 
+		</td>
+		</tr>
+
+		<!-- row 2 -->
+		<tr>
+		<td align="center"><b>音檔2</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/ddsp/f1_123_5.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 3 -->
+		<tr>
+		<td align="center"><b>音檔3</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/sawsing/f1_123_5.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 4 -->
+		<tr>
+		<td align="center"><b>音檔4</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/rec/f1_123_5.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 5 -->
+		<tr>
+		<td align="center"><b>音檔5</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/hifi/f1_123_5.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		</table>
+	</div>
+
+	<p style="line-height:3.5em;"></p>
+
+	<div style="float: left; margin-right:50px">
+		<h1>	<font color="DarkRed">實驗 10.</font></h1>
+		<table border=1 id="cssTable">
+
+		<!-- row 1 -->
+		<tr>
+		<td align="center"><b>音檔1</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/hifi/f1_142_4.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 2 -->
+		<tr>
+		<td align="center"><b>音檔2</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/ddsp/f1_142_4.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 3 -->
+		<tr>
+		<td align="center"><b>音檔3</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/rec/f1_142_4.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 4 -->
+		<tr>
+		<td align="center"><b>音檔4</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/pwg/f1_142_4.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 5 -->
+		<tr>
+		<td align="center"><b>音檔5</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/sawsing/f1_142_4.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		</table>
+		</div>
+
+		<div style="float: left; margin-right:50px">
+		<h1>	<font color="DarkRed">實驗 11.</font></h1>
+		<table border=1 id="cssTable">
+
+		<!-- row 1 -->
+		<tr>
+		<td align="center"><b>音檔1</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/ddsp/f1_143_5.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 2 -->
+		<tr>
+		<td align="center"><b>音檔2</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/rec/f1_143_5.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 3 -->
+		<tr>
+		<td align="center"><b>音檔3</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/hifi/f1_143_5.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 4 -->
+		<tr>
+		<td align="center"><b>音檔4</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/sawsing/f1_143_5.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 5 -->
+		<tr>
+		<td align="center"><b>音檔5</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/pwg/f1_143_5.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		</table>
+	</div>
+
+		<div style="display: inline-block;">
+		<h1>	<font color="DarkRed">實驗 12.</font></h1>
+		<table border=1 id="cssTable">
+
+		<!-- row 1 -->
+		<tr>
+		<td align="center"><b>音檔1</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/pwg/f1_108_4.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 2 -->
+		<tr>
+		<td align="center"><b>音檔2</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/hifi/f1_108_4.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 3 -->
+		<tr>
+		<td align="center"><b>音檔3</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/ddsp/f1_108_4.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 4 -->
+		<tr>
+		<td align="center"><b>音檔4</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/rec/f1_108_4.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		<!-- row 5 -->
+		<tr>
+		<td align="center"><b>音檔5</b></td>
+		<td>
+			<br/>
+			<audio controls id="player">
+			  <source src="UserStudy3/limited data/sawsing/f1_108_4.wav" type="audio/wav">
+			</audio>
+		</td>
+		</tr>
+
+		</table>
+	</div>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<p style="line-height:3.5em;"></p>
+	<hr>
+    <br/>
+
+  </form>
+</body>
+
+</html>

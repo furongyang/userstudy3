@@ -1,0 +1,16 @@
+/*Home Page--CSS*/
+td 
+{
+    height: 50px; 
+    width: 50px;
+}
+
+#cssTable td 
+{
+    text-align: center; 
+    vertical-align: middle;
+}
+
+#player {
+ height: 60%;
+}​
